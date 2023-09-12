@@ -177,7 +177,6 @@ body {
   font-weight: 900;
   font-size: 30px;
   color: rgba(89, 108, 114, 1);
- 
 }
 #texnikH1 {
   color: rgba(89, 108, 114, 1);
@@ -187,7 +186,6 @@ body {
 /* Techniques */
 
 .techniques {
-
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -283,7 +281,36 @@ button:hover {
 #name {
   color: rgba(104, 104, 104, 1);
 }
+/* marks */
+
+.marks {
+  background-color: #f0f0f0;
+  padding-top: 60px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.markimg {
+  padding-top: 20px;
+  display: flex;
+
+  justify-content: space-between;
+}
+.markimg img{
+  object-fit: contain;
+}
+#markH1{
+  font-weight: 900;
+  font-size: 40px;
+  color: rgba(89, 108, 114, 1);
+}
+
 @media screen and (max-width: 768px) {
+  /* navbar */
   .navigations,
   .languages {
     display: none;
@@ -294,6 +321,7 @@ button:hover {
   .burger-menu {
     display: flex;
   }
+  /* first content */
   .leftContent {
     margin-left: 20px;
   }
@@ -324,6 +352,7 @@ button:hover {
   #firstContentButton {
     background-color: white;
   }
+  /* cards */
   .card img {
     display: none;
   }
@@ -337,7 +366,7 @@ button:hover {
   .cardsBottom {
     flex-wrap: wrap;
   }
-
+/* Test Technique section */
   #bottomContent {
     text-align: center;
     padding-top: 20px;
@@ -352,7 +381,7 @@ button:hover {
   .rightSec {
     position: relative;
   }
-
+/* techniques */
   .rightContentTex {
     position: absolute;
     bottom: -180px;
@@ -370,10 +399,14 @@ button:hover {
     height: 45px;
   }
   .texCard {
-    min-width: 100%; 
+    min-width: 100%;
     padding-top: 150px;
   }
-  #moreTechniques{
+  #moreTechniques {
+    display: none;
+  }
+  /* marks */
+  .markimg img:nth-child(n+4) {
     display: none;
   }
 }
