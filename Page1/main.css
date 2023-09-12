@@ -227,20 +227,9 @@ body {
   margin-bottom: 10px;
 }
 
-h3,
-p {
-  margin: 0;
-}
-
 h3 {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 5px;
-}
-
-p {
-  font-size: 16px;
-  color: #666666;
   margin-bottom: 5px;
 }
 
@@ -250,7 +239,8 @@ p {
   color: rgba(255, 192, 31, 1);
 }
 
-button {
+#moreTechniques,
+#rentButton {
   margin-top: auto;
   background-color: transparent;
   border: 1px solid;
@@ -266,7 +256,7 @@ button {
   color: white;
 }
 
-button:hover {
+#rentButton:hover {
   background-color: rgba(255, 192, 31, 1);
 }
 .texCard:hover {
@@ -284,7 +274,6 @@ button:hover {
 /* marks */
 
 .marks {
-  background-color: #f0f0f0;
   padding-top: 60px;
 }
 
@@ -300,15 +289,57 @@ h1 {
 
   justify-content: space-between;
 }
-.markimg img{
+.markimg img {
   object-fit: contain;
 }
-#markH1{
+#markH1 {
   font-weight: 900;
   font-size: 40px;
   color: rgba(89, 108, 114, 1);
 }
+/* News */
+.news {
+  padding-top: 70px;
+}
+.newsContent {
+  padding: 20px;
+}
+.newsCard {
+  width: 300px;
+  box-shadow: 0 0 10px rgba(149, 149, 149, 0.25);
+}
+.newsCard img {
+  width: 100%;
+}
+.newsCard:hover{
+  box-shadow: 0 0 20px rgba(255, 192, 31, 1);
+  transform: scale(1.1);
+  transition: 250ms;
 
+
+}
+.newsCards {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+}
+#newsBtn {
+  background-color: rgba(255, 192, 31, 1);
+ 
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 500px;
+  display: none;
+  
+}
+#newsH1{
+  font-weight: 900;
+  font-size: 40px;
+  color: rgba(89, 108, 114, 1);
+}
 @media screen and (max-width: 768px) {
   /* navbar */
   .navigations,
@@ -366,7 +397,7 @@ h1 {
   .cardsBottom {
     flex-wrap: wrap;
   }
-/* Test Technique section */
+  /* Test Technique section */
   #bottomContent {
     text-align: center;
     padding-top: 20px;
@@ -381,7 +412,7 @@ h1 {
   .rightSec {
     position: relative;
   }
-/* techniques */
+  /* techniques */
   .rightContentTex {
     position: absolute;
     bottom: -180px;
@@ -406,7 +437,24 @@ h1 {
     display: none;
   }
   /* marks */
-  .markimg img:nth-child(n+4) {
+  .markimg img:nth-child(n + 4) {
     display: none;
+  }
+  /* News */
+  .newsCards {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .newsCard {
+    width: 100%; /* Her kartın genişliğini yüzde olarak ayarla */
+    /* Diğer stiller */
+  }
+  #newsBtn{
+    display: block;
+  }
+  #newsH1{
+    text-align: center;
   }
 }
