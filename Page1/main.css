@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+*{
+  box-sizing: border-box
+}
 body {
   font-family: "Roboto";
 }
@@ -121,7 +124,7 @@ body {
 }
 .card:hover {
   box-shadow: 0 0 20px rgba(255, 192, 31, 1);
-  transform: scale(1.1);
+
   transition: 250ms;
 }
 .cardsTop,
@@ -153,7 +156,7 @@ body {
 }
 .rightSec {
   width: 750px;
-  height: 370px;
+  height: 450px;
   padding-top: 100px;
 }
 .rightSec img {
@@ -161,6 +164,7 @@ body {
   height: 100%;
   border: 15px solid white;
   box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+  object-fit: cover;
 }
 .rightContentTex {
   display: flex;
@@ -261,7 +265,7 @@ h3 {
 }
 .texCard:hover {
   box-shadow: 0 0 20px rgba(255, 192, 31, 1);
-  transform: scale(1.1);
+ 
   transition: 250ms;
 }
 
@@ -287,7 +291,7 @@ h1 {
   padding-top: 20px;
   display: flex;
 
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .markimg img {
   object-fit: contain;
@@ -311,12 +315,10 @@ h1 {
 .newsCard img {
   width: 100%;
 }
-.newsCard:hover{
+.newsCard:hover {
   box-shadow: 0 0 20px rgba(255, 192, 31, 1);
-  transform: scale(1.1);
+  
   transition: 250ms;
-
-
 }
 .newsCards {
   display: flex;
@@ -325,7 +327,7 @@ h1 {
 }
 #newsBtn {
   background-color: rgba(255, 192, 31, 1);
- 
+
   padding: 10px 20px;
   border: none;
   border-radius: 20px;
@@ -333,15 +335,76 @@ h1 {
   margin: 0 auto;
   width: 500px;
   display: none;
-  
 }
-#newsH1{
+#newsH1 {
   font-weight: 900;
   font-size: 40px;
   color: rgba(89, 108, 114, 1);
 }
+/* contact */
+.contact {
+  padding-top: 150px;
+}
+.contactSection {
+  display: flex;
+  background-color: rgba(239, 239, 239, 1);
+  position: relative;
+  width: 100%;
+}
+.contactRight img {
+  width: 50%;
+  position: absolute;
+  top: -129px;
+  right: 20px;
+}
+.contactLeft {
+  width: 50%;
+  text-align: left;
+  padding: 20px;
+}
+#contactH1 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 40px;
+  color: rgba(89, 108, 114, 1);
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.inputs input {
+  border-radius: 20px;
+  border: 1px solid;
+  background: transparent;
+  height: 30px;
+  padding-left: 10px;
+}
+.contactLeft {
+  font-size: 14px;
+  width: 100%;
+}
+#contentP {
+  width: 40%;
+}
+#sendBtn {
+  width: 32%;
+  margin-top: 15px;
+  border-radius: 20px;
+  border: none;
+  padding: 5px;
+  background-color: rgba(255, 192, 31, 1);
+}
+#sendBtn:hover {
+  background-color: rgb(221, 166, 28);
+}
+
+
+
 @media screen and (max-width: 768px) {
-  /* navbar */
+  *{
+    box-sizing: border-box;
+  }
   .navigations,
   .languages {
     display: none;
@@ -352,7 +415,7 @@ h1 {
   .burger-menu {
     display: flex;
   }
-  /* first content */
+  /* İlk içerik */
   .leftContent {
     margin-left: 20px;
   }
@@ -367,6 +430,7 @@ h1 {
     height: 597px;
     padding: 20px;
     position: relative;
+   
   }
   .firstLeft {
     color: white;
@@ -383,7 +447,7 @@ h1 {
   #firstContentButton {
     background-color: white;
   }
-  /* cards */
+  /* Kartlar */
   .card img {
     display: none;
   }
@@ -397,7 +461,7 @@ h1 {
   .cardsBottom {
     flex-wrap: wrap;
   }
-  /* Test Technique section */
+  /* Teknik Bölümü */
   #bottomContent {
     text-align: center;
     padding-top: 20px;
@@ -412,10 +476,10 @@ h1 {
   .rightSec {
     position: relative;
   }
-  /* techniques */
+  /* Teknikler */
   .rightContentTex {
     position: absolute;
-    bottom: -180px;
+    bottom: -300px;
     left: 0;
     z-index: 1;
     color: white;
@@ -433,28 +497,55 @@ h1 {
     min-width: 100%;
     padding-top: 150px;
   }
+  .texCards{
+    padding-top: 308px;
+  }
   #moreTechniques {
     display: none;
   }
-  /* marks */
+  /* İşaretler */
+  .markimg img{
+    width: 85px;
+  }
   .markimg img:nth-child(n + 4) {
     display: none;
   }
-  /* News */
+  /* Haberler */
   .newsCards {
     display: flex;
     flex-direction: column;
     width: 100%;
   }
-  
+
   .newsCard {
-    width: 100%; /* Her kartın genişliğini yüzde olarak ayarla */
-    /* Diğer stiller */
+    width: 100%;
   }
-  #newsBtn{
+  #newsBtn {
     display: block;
+    margin-top: 40px;
+    width: 100%;
   }
-  #newsH1{
+  #newsH1 {
     text-align: center;
   }
+  /* İletişim */
+  .contactRight {
+    display: none;
+  }
+  #contactH1 {
+    font-size: 55px;
+    text-align: center;
+  }
+  #contentP,
+  #sendBtn,
+  .inputs input {
+    width: 100%;
+  }
+  .inputs input{
+    margin: 7px 0;
+  }
+  .inputs{
+    gap: 1px;
+  }
 }
+
