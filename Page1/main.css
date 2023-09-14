@@ -403,6 +403,7 @@ h1 {
   display: flex;
   padding-top: 80px;
   gap: 20px;
+  padding-bottom: 40px;
 }
 .whyUsLeft {
   padding-top: 100px;

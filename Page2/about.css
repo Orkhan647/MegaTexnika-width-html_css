@@ -1,0 +1,398 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+/* top head */
+.topHead {
+  background-color: rgba(255, 192, 31, 1);
+}
+.leftContent {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rightContent {
+  margin: auto 0;
+  display: flex;
+  gap: 25px;
+}
+/* navigation Bar */
+
+.navSection {
+  box-shadow: 0 2px 20px rgba(159, 159, 159, 0.25);
+}
+.navigations a {
+  margin-right: 55px;
+  color: gray;
+  text-decoration: none;
+}
+.navigations a:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px yellow;
+  border-radius: 30px;
+  transform: scale(1.5);
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+.navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navSection {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.burger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+.languages{
+  padding: 30px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 192, 31, 1);
+  transition: 0.4s;
+}
+ /* first Section*/
+.firstSecContainer{
+  background-image: url(../assets/Page2-about/aboutPageBg.png);
+}
+.topContent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+#megaTexnika{
+  color: rgba(89, 108, 114, 1);
+  font-size: 100px;
+  text-align: center;
+  font-weight: 900;
+}
+#megatexnikaBtn{
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: rgba(255, 192, 31, 1);
+}
+.bottomSection img{
+  width: 100%;
+  padding-top: 80px;
+
+}
+.breadCrump{
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* tested Techniques */
+
+.leftSec img {
+  width: 100%;
+  height: 480px;
+  border: 15px solid white;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+}
+.leftSec {
+  padding-top: 350px;
+  width: 350px;
+}
+.rightSec {
+  width: 750px;
+
+  padding-top: 100px;
+}
+.rightSec img {
+  width: 100%;
+
+  border: 15px solid white;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+  object-fit: cover;
+}
+.rightContentTex {
+  display: flex;
+  flex-direction: column;
+}
+#tested {
+  border-radius: 20px;
+  border: 1px solid;
+  background: transparent;
+  width: 130px;
+  height: 40px;
+}
+#categoriesH1 {
+  font-weight: 900;
+  font-size: 30px;
+  color: rgba(89, 108, 114, 1);
+}
+#texnikH1 {
+  color: rgba(89, 108, 114, 1);
+  font-weight: 900;
+  font-size: 50px;
+}
+
+
+/* why Us */
+.whyUs {
+  display: flex;
+  padding-top: 80px;
+  gap: 20px;
+  padding-bottom: 40px;
+}
+.whyUsLeft {
+  padding-top: 100px;
+}
+.whyUsRight img {
+  border: 15px solid white;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+}
+#whyUsH1 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 40px;
+  color: rgba(89, 108, 114, 1);
+}
+.whyUsLeft p {
+  color: rgba(53, 53, 53, 1);
+}
+
+
+
+
+/* footer */
+.footer {
+  background: rgb(255, 243, 254);
+  background: linear-gradient(
+    273deg,
+    rgba(255, 243, 254, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 243, 254, 1) 90%
+  );
+  padding-top: 40px;
+}
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-top: 20px;
+}
+.pages a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 1);
+  font-weight: 500;
+}
+.pages a:hover {
+  color: rgb(151, 149, 149);
+}
+.locationContact {
+  padding-top: 6px;
+}
+.iconsWorkTime {
+  padding-top: 7px;
+}
+.logo {
+  padding-top: 25px;
+}
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.siteInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  font-size: 12px;
+}
+#Jed {
+  font-weight: 900;
+}
+.smallLogo {
+  display: none;
+}
+.footerContainer{
+  display: flex;
+ justify-content: space-between;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    * {
+      box-sizing: border-box;
+    }
+    .navigations,
+    .languages {
+      display: none;
+    }
+    .logo {
+      margin-left: 20px;
+    }
+    .burger-menu {
+      display: flex;
+    }
+    /* İlk içerik */
+    .leftContent {
+      margin-left: 20px;
+    }
+    .rightContent {
+      margin-right: 20px;
+    }
+    .firstContent {
+      background-image: url(../assets/Page1-main/firstContentImg.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      height: 597px;
+      padding: 20px;
+      position: relative;
+    }
+    .firstLeft {
+      color: white;
+      font-size: 15px;
+      position: absolute;
+      bottom: 20px;
+    }
+    #h1 {
+      font-size: 35px;
+    }
+    .firstRight {
+      display: none;
+    }
+    #firstContentButton {
+      background-color: white;
+    }
+
+
+
+
+
+
+  /* Teknik Bölümü */
+  #bottomContent {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .leftSec {
+    display: none;
+   
+  }
+  #texnikH1{
+    color: white;
+  }
+  .rightContentTex{
+    position:absolute;
+    bottom: 70px;
+    color: white;
+  }
+  #tested{
+    background-color: white;
+  }
+  .rightSec img {
+    border: none;
+    height: 590px;
+    position: relative;
+    margin-bottom: 30px;
+    
+  }
+  .rightSec {
+    position: relative;
+  }
+
+
+/* why us */
+.whyUs {
+  background: url(../assets/Page1-main/wyhUsimg.png) no-repeat;
+}
+.whyUsLeft {
+  font-size: 12px;
+  padding-top: 40px;
+}
+
+.whyUsRight img {
+  display: none;
+}
+#whyUsH1 {
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.whyUs p {
+  color: white;
+  text-align: justify;
+  padding: 0 15px;
+}
+
+
+/* Footer */
+    .largelogo {
+      display: none;
+    }
+    .smallLogo {
+      display: block;
+    
+    }
+    .pages{
+      width: 50%;
+    }
+  
+    .locationContact{
+      width: 50%;
+    }
+  .footerContainer{
+    flex-wrap: wrap;
+  }
+  .smallLogo img{
+    padding: 0 35%;
+  }
+  .inconsWorkTime p{
+    padding: 0 20px;
+  }
+  
+  .locationContact {
+    display: inline-block; 
+  }
+  .socialIcons{
+    padding: 0 32%;
+  }
+}
