@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-*{
-  box-sizing: border-box
+* {
+  box-sizing: border-box;
 }
 body {
   font-family: "Roboto";
@@ -265,7 +265,7 @@ h3 {
 }
 .texCard:hover {
   box-shadow: 0 0 20px rgba(255, 192, 31, 1);
- 
+
   transition: 250ms;
 }
 
@@ -317,7 +317,7 @@ h1 {
 }
 .newsCard:hover {
   box-shadow: 0 0 20px rgba(255, 192, 31, 1);
-  
+
   transition: 250ms;
 }
 .newsCards {
@@ -388,7 +388,7 @@ h1 {
   width: 40%;
 }
 #sendBtn {
-  width: 32%;
+  width: 29%;
   margin-top: 15px;
   border-radius: 20px;
   border: none;
@@ -398,11 +398,34 @@ h1 {
 #sendBtn:hover {
   background-color: rgb(221, 166, 28);
 }
+/* why Us */
+.whyUs {
+  display: flex;
+  padding-top: 80px;
+  gap: 20px;
+}
+.whyUsLeft {
+  padding-top: 100px;
+  
+}
+.whyUsRight img {
+  border: 15px solid white;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
 
+}
+#whyUsH1{
+  text-align: left;
+  font-weight: 900;
+  font-size: 40px;
+  color: rgba(89, 108, 114, 1);
+}
+.whyUsLeft p{
+  color: rgba(53, 53, 53, 1)
+}
 
 
 @media screen and (max-width: 768px) {
-  *{
+  * {
     box-sizing: border-box;
   }
   .navigations,
@@ -430,7 +453,6 @@ h1 {
     height: 597px;
     padding: 20px;
     position: relative;
-   
   }
   .firstLeft {
     color: white;
@@ -497,14 +519,14 @@ h1 {
     min-width: 100%;
     padding-top: 150px;
   }
-  .texCards{
+  .texCards {
     padding-top: 308px;
   }
   #moreTechniques {
     display: none;
   }
   /* İşaretler */
-  .markimg img{
+  .markimg img {
     width: 85px;
   }
   .markimg img:nth-child(n + 4) {
@@ -541,11 +563,41 @@ h1 {
   .inputs input {
     width: 100%;
   }
-  .inputs input{
+  .inputs input {
     margin: 7px 0;
   }
-  .inputs{
+  .inputs {
     gap: 1px;
   }
+  /* why us */
+  .whyUs {
+    background: url(../assets/Page1-main/wyhUsimg.png)no-repeat ;
+    
+    
+  }
+  .whyUsLeft{
+    font-size: 12px;
+    padding-top: 40px;
 }
 
+.whyUsRight{
+  
+}
+.whyUsRight img {
+display: none;
+   
+}
+#whyUsH1{
+  color: white;
+  font-size: 35px;
+  text-align: center;
+}
+.whyUs p{
+  color: white;
+  text-align: justify;
+  padding: 0 15px;
+}
+  
+ /* Footer */
+  
+}
