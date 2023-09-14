@@ -406,24 +406,76 @@ h1 {
 }
 .whyUsLeft {
   padding-top: 100px;
-  
 }
 .whyUsRight img {
   border: 15px solid white;
   box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
-
 }
-#whyUsH1{
+#whyUsH1 {
   text-align: left;
   font-weight: 900;
   font-size: 40px;
   color: rgba(89, 108, 114, 1);
 }
-.whyUsLeft p{
-  color: rgba(53, 53, 53, 1)
+.whyUsLeft p {
+  color: rgba(53, 53, 53, 1);
 }
-
-
+/* footer */
+.footer {
+  background: rgb(255, 243, 254);
+  background: linear-gradient(
+    273deg,
+    rgba(255, 243, 254, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 243, 254, 1) 90%
+  );
+  padding-top: 40px;
+}
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-top: 20px;
+}
+.pages a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 1);
+  font-weight: 500;
+}
+.pages a:hover {
+  color: rgb(151, 149, 149);
+}
+.locationContact {
+  padding-top: 6px;
+}
+.iconsWorkTime {
+  padding-top: 7px;
+}
+.logo {
+  padding-top: 25px;
+}
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.siteInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  font-size: 12px;
+}
+#Jed {
+  font-weight: 900;
+}
+.smallLogo {
+  display: none;
+}
+.footerContainer{
+  display: flex;
+ justify-content: space-between;
+}
 @media screen and (max-width: 768px) {
   * {
     box-sizing: border-box;
@@ -501,7 +553,7 @@ h1 {
   /* Teknikler */
   .rightContentTex {
     position: absolute;
-    bottom: -300px;
+    bottom: -260px;
     left: 0;
     z-index: 1;
     color: white;
@@ -571,33 +623,58 @@ h1 {
   }
   /* why us */
   .whyUs {
-    background: url(../assets/Page1-main/wyhUsimg.png)no-repeat ;
-    
-    
+    background: url(../assets/Page1-main/wyhUsimg.png) no-repeat;
   }
-  .whyUsLeft{
+  .whyUsLeft {
     font-size: 12px;
     padding-top: 40px;
+  }
+
+  .whyUsRight img {
+    display: none;
+  }
+  #whyUsH1 {
+    color: white;
+    font-size: 35px;
+    text-align: center;
+  }
+  .whyUs p {
+    color: white;
+    text-align: justify;
+    padding: 0 15px;
+  }
+
+  /* Footer */
+
+  .largelogo {
+    display: none;
+  }
+  .smallLogo {
+    display: block;
+  
+  }
+  .pages{
+    width: 50%;
+  }
+
+  .locationContact{
+    width: 50%;
+  }
+.footerContainer{
+  flex-wrap: wrap;
+}
+.smallLogo img{
+  padding: 0 35%;
+}
+.inconsWorkTime p{
+  padding: 0 20px;
 }
 
-.whyUsRight{
-  
+.locationContact {
+  display: inline-block; 
 }
-.whyUsRight img {
-display: none;
-   
+.socialIcons{
+  padding: 0 32%;
 }
-#whyUsH1{
-  color: white;
-  font-size: 35px;
-  text-align: center;
-}
-.whyUs p{
-  color: white;
-  text-align: justify;
-  padding: 0 15px;
-}
-  
- /* Footer */
-  
+ 
 }
