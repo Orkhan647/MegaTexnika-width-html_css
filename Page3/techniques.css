@@ -232,6 +232,31 @@ h3 {
   display: flex;
   justify-content: space-between;
 }
+/* TEchniques Cards */
+.btn-groups {
+  border: 1px solid;
+  border-radius: 20px;
+  margin: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-groups > button {
+  background: none;
+  font-weight: 600;
+  border: none;
+  font-size: 12px;
+  padding: 10px 0;
+
+  width: 100%;
+}
+
+.btn-groups > button:hover {
+  background-color: rgba(255, 192, 31, 1);
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
 @media screen and (max-width: 768px) {
   * {
     box-sizing: border-box;
@@ -306,4 +331,21 @@ h3 {
   .socialIcons {
     padding: 0 32%;
   }
+  /* techniques */
+
+  .btn-groups {
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+ border: none;
+  }
+
+  .btn-groups > button {
+    margin: 5px 0;
+    width: 100%;
+ 
+}
+#sliderBar{
+  display: none;
+}
 }
