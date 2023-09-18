@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+/* top head */
+.topHead {
+  background-color: rgba(255, 192, 31, 1);
+}
+.leftContent {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rightContent {
+  margin: auto 0;
+  display: flex;
+  gap: 25px;
+}
+/* navigation Bar */
+
+.navSection {
+  box-shadow: 0 2px 20px rgba(159, 159, 159, 0.25);
+}
+.navigations a {
+  margin-right: 55px;
+  color: gray;
+  text-decoration: none;
+}
+.navigations a:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px yellow;
+  border-radius: 30px;
+  transform: scale(1.5);
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+.navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navSection {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.burger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+.languages {
+  padding: 30px;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 192, 31, 1);
+  transition: 0.4s;
+}
+/* Techniques */
+.techniques {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#categoriesH1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.texCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.texCard {
+  flex: 1;
+
+  border-radius: 8px;
+  box-shadow: 0 0 25px rgba(149, 149, 149, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(50% - 10px);
+}
+
+.texCard img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#price {
+  margin-top: auto;
+  text-align: right;
+  color: rgba(255, 192, 31, 1);
+}
+
+#moreTechniques,
+#rentButton {
+  margin-top: auto;
+  background-color: transparent;
+  border: 1px solid;
+  color: #000000;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#rentButton:hover {
+  background-color: rgba(255, 192, 31, 1);
+}
+.texCard:hover {
+  box-shadow: 0 0 20px rgba(255, 192, 31, 1);
+
+  transition: 250ms;
+}
+
+#year {
+  color: rgba(176, 173, 173, 1);
+}
+#name {
+  color: rgba(104, 104, 104, 1);
+}
+.breadCrump {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+/* Products */
+.product {
+  display: flex;
+  background: url(../assets/Page8-Product/ProductBg.png);
+
+  gap: 20px;
+  padding: 50px 150px;
+}
+.pricesRents {
+  display: flex;
+  justify-content: space-between;
+}
+.prices {
+  color: rgba(255, 192, 31, 1);
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+}
+.section1 img {
+  width: 100px;
+  height: 100px;
+}
+.section1 img:hover {
+  border: 1px solid rgba(255, 192, 31, 1);
+}
+.section2 img {
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.section3 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+  padding: 70px;
+}
+#section3-btn {
+  color: black;
+  border-radius: 20px;
+  border: none;
+  padding: 10px;
+  background: rgba(255, 192, 31, 1);
+}
+.sectionHead {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(89, 108, 114, 1);
+}
+
+#categoriesH1 {
+  text-align: left;
+}
+
+/* footer */
+.footer {
+  background: rgb(255, 243, 254);
+  background: linear-gradient(
+    273deg,
+    rgba(255, 243, 254, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 243, 254, 1) 90%
+  );
+  padding-top: 40px;
+}
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-top: 20px;
+}
+.pages a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 1);
+  font-weight: 500;
+}
+.pages a:hover {
+  color: rgb(151, 149, 149);
+}
+.locationContact {
+  padding-top: 6px;
+}
+.iconsWorkTime {
+  padding-top: 7px;
+}
+.logo {
+  padding-top: 25px;
+}
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.siteInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  font-size: 12px;
+}
+#Jed {
+  font-weight: 900;
+}
+.smallLogo {
+  display: none;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navigations,
+  .languages {
+    display: none;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .burger-menu {
+    display: flex;
+  }
+
+  /* Teknikler */
+  .rightContentTex {
+    position: absolute;
+    bottom: -260px;
+    left: 0;
+    z-index: 1;
+    color: white;
+    padding: 30px;
+  }
+  #texnikH1 {
+    color: white;
+  }
+  #tested {
+    background: white;
+    border: none;
+    height: 45px;
+  }
+  .texCard {
+    min-width: 100%;
+    padding-top: 150px;
+  }
+
+  #moreTechniques {
+    display: none;
+  }
+
+  /* Footer */
+
+  .largelogo {
+    display: none;
+  }
+  .smallLogo {
+    display: block;
+  }
+  .pages {
+    width: 50%;
+  }
+
+  .locationContact {
+    width: 50%;
+  }
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+  .smallLogo img {
+    padding: 0 35%;
+  }
+  .inconsWorkTime p {
+    padding: 0 20px;
+  }
+
+  .locationContact {
+    display: inline-block;
+  }
+  .socialIcons {
+    padding: 0 32%;
+  }
+
+  .product {
+    flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .product,
+  .section3 {
+    padding: 20px; /* Adjust padding for small screens */
+  }
+
+  .section3 {
+    padding: 20px;
+  }
+
+  .section3 img {
+    max-width: 100%;
+    height: auto;
+  }
+  .section1{
+    display: flex;
+    flex-direction: row;
+
+  }
+  #img1{
+    display: none;
+  }
+}
