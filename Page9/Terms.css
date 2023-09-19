@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+/* top head */
+.topHead {
+  background-color: rgba(255, 192, 31, 1);
+}
+.leftContent {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rightContent {
+  margin: auto 0;
+  display: flex;
+  gap: 25px;
+}
+/* navigation Bar */
+
+.navSection {
+  box-shadow: 0 2px 20px rgba(159, 159, 159, 0.25);
+}
+.navigations a {
+  margin-right: 55px;
+  color: gray;
+  text-decoration: none;
+}
+.navigations a:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px yellow;
+  border-radius: 30px;
+  transform: scale(1.5);
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+.navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navSection {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.burger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 192, 31, 1);
+  transition: 0.4s;
+}
+/* terms */
+.terms {
+  display: flex;
+  gap: 50px;
+  padding: 50px 0;
+  position: relative;
+}
+.termsLeft img {
+  border: 10px solid white;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+  position: absolute;
+  left: 80px;
+  bottom: 0;
+  height: 60%;
+  margin-bottom: 45px;
+}
+.termsRight img {
+  border: 10px solid white;
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+  width: 100%;
+}
+#termsP {
+  padding: 0px 60px;
+}
+#termsH1 {
+  text-align: center;
+  padding-top: 100px;
+  padding-left: 60px;
+  font-size: 50px;
+  color: rgba(89, 108, 114, 1);
+}
+.termsRight {
+  text-align: justify;
+}
+.termsLeft {
+  width: 40%;
+}
+.termsRight {
+  width: 60%;
+}
+/* accordion */
+
+.accordion {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 1px solid rgba(189, 189, 189, 1);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.accordion-header {
+  padding: 10px;
+}
+.accordion-header::after {
+  content: "+";
+  color: rgba(255, 192, 31, 1);
+  position: absolute;
+  right: 10px;
+  font-size: 20px;
+}
+#accordionH1 {
+ text-align: center;
+ color: rgba(89, 108, 114, 1);
+}
+
+/* footer */
+.footer {
+  background: rgb(255, 243, 254);
+  background: linear-gradient(
+    273deg,
+    rgba(255, 243, 254, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 243, 254, 1) 90%
+  );
+  padding-top: 40px;
+}
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-top: 20px;
+}
+.pages a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 1);
+  font-weight: 500;
+}
+.pages a:hover {
+  color: rgb(151, 149, 149);
+}
+.locationContact {
+  padding-top: 6px;
+}
+.iconsWorkTime {
+  padding-top: 7px;
+}
+.logo {
+  padding-top: 25px;
+}
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.siteInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  font-size: 12px;
+}
+#Jed {
+  font-weight: 900;
+}
+.smallLogo {
+  display: none;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navigations,
+  .languages {
+    display: none;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .burger-menu {
+    display: flex;
+  }
+
+  /* Footer */
+
+  .largelogo {
+    display: none;
+  }
+  .smallLogo {
+    display: block;
+  }
+  .pages {
+    width: 50%;
+  }
+
+  .locationContact {
+    width: 50%;
+  }
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+  .smallLogo img {
+    padding: 0 35%;
+  }
+  .inconsWorkTime p {
+    padding: 0 20px;
+  }
+
+  .locationContact {
+    display: inline-block;
+  }
+  .socialIcons {
+    padding: 0 32%;
+  }
+  /* terms */
+  .terms {
+    flex-direction: column;
+  }
+
+  .termsRight {
+    width: 100%;
+  }
+  .termsLeft {
+    display: none;
+  }
+  #termsP {
+    padding: 0px 20px;
+  }
+  
+}
