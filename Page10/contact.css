@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto";
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+/* top head */
+.topHead {
+  background-color: rgba(255, 192, 31, 1);
+}
+.leftContent {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.rightContent {
+  margin: auto 0;
+  display: flex;
+  gap: 25px;
+}
+/* navigation Bar */
+
+.navSection {
+  box-shadow: 0 2px 20px rgba(159, 159, 159, 0.25);
+}
+.navigations a {
+  margin-right: 55px;
+  color: gray;
+  text-decoration: none;
+}
+.navigations a:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px yellow;
+  border-radius: 30px;
+  transform: scale(1.5);
+  transition: 500ms;
+  -webkit-transition: 500ms;
+  -moz-transition: 500ms;
+  -ms-transition: 500ms;
+  -o-transition: 500ms;
+}
+.navigations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navSection {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.burger-menu {
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-right: 20px;
+  display: none;
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 192, 31, 1);
+  transition: 0.4s;
+}
+/* contacts */
+.contacts-content {
+  display: flex;
+margin-bottom: 70px;
+}
+.input-button {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+}
+.input-button textarea,
+button {
+  border-radius: 20px;
+  border: 1px solid;
+}
+.contacts {
+  display: flex;
+  gap: 10px;
+  width: 70%;
+  padding-bottom: 10px;
+}
+.contacts input {
+  border-radius: 20px;
+  border: 1px solid;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+textarea {
+  padding: 10px;
+}
+#contactSendButton {
+  padding: 8px 0;
+  background-color: rgba(255, 192, 31, 1);
+  border: none;
+}
+.breadCrump {
+  display: flex;
+  gap: 10px;
+  padding-left: 20px;
+}
+#contactHeadH1 {
+  color: rgba(89, 108, 114, 1);
+  padding: 30px 0;
+}
+.right-numbers {
+  display: flex;
+  gap: 15px;
+}
+.social-icons {
+  display: flex;
+  gap: 30px;
+}
+#contactRightH1 {
+  text-align: center;
+}
+.contacts-right {
+  box-shadow: 0 0 20px rgba(149, 149, 149, 0.25);
+}
+.contacts-right {
+  width: 40%;
+  padding: 50px;
+}
+
+/* footer */
+.footer {
+  background: rgb(255, 243, 254);
+  background: linear-gradient(
+    273deg,
+    rgba(255, 243, 254, 1) 10%,
+    rgba(255, 255, 255, 1) 20%,
+    rgba(255, 255, 255, 1) 80%,
+    rgba(255, 243, 254, 1) 90%
+  );
+  padding-top: 40px;
+}
+.pages {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+  padding-top: 20px;
+}
+.pages a {
+  text-decoration: none;
+  color: rgba(53, 53, 53, 1);
+  font-weight: 500;
+}
+.pages a:hover {
+  color: rgb(151, 149, 149);
+}
+.locationContact {
+  padding-top: 6px;
+}
+.iconsWorkTime {
+  padding-top: 7px;
+}
+.logo {
+  padding-top: 25px;
+}
+.socialIcons {
+  display: flex;
+  gap: 30px;
+  font-size: 20px;
+}
+.siteInfo {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 60px;
+  font-size: 12px;
+}
+#Jed {
+  font-weight: 900;
+}
+.smallLogo {
+  display: none;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  .navigations,
+  .languages {
+    display: none;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .burger-menu {
+    display: flex;
+  }
+
+  /* Footer */
+
+  .largelogo {
+    display: none;
+  }
+  .smallLogo {
+    display: block;
+  }
+  .pages {
+    width: 50%;
+  }
+
+  .locationContact {
+    width: 50%;
+  }
+  .footerContainer {
+    flex-wrap: wrap;
+  }
+  .smallLogo img {
+    padding: 0 35%;
+  }
+  .inconsWorkTime p {
+    padding: 0 20px;
+  }
+
+  .locationContact {
+    display: inline-block;
+  }
+  .socialIcons {
+    padding: 0 32%;
+  }
+  /* contacts */
+
+  .contacts-content {
+    flex-direction: column;
+  }
+
+  .contacts-left,
+  .contacts-right {
+    width: 100%;
+  }
+
+  .input-button {
+    width: 100%;
+  }
+
+  .contacts {
+    flex-direction: column;
+  }
+
+  .contacts input,
+  .contacts textarea {
+    width: 100%;
+  }
+
+  .contacts-right {
+    margin-top: 20px;
+  }
+}
